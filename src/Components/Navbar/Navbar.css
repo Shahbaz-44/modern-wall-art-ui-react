@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  padding: 20px 0;
+
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 25px;
+}
+
+.menu-icon{
+    color: var(--primary);
+}
+
+.insta-icon{
+    color: var(--accent);
+}
+.menu-items{
+    display: flex;
+    justify-content:right;
+    /* transform: translateY(5%);
+    transition: 0.3s ease; */
+}
+
