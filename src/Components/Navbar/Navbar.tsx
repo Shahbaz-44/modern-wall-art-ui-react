@@ -32,8 +32,9 @@ const Navbar = () => {
              
         </div>
         {/* mobile menu */}
-        { isOpen && (
-        <div className="menu-items">
+        {/* { isOpen && ( */}
+            {/* class conditoion open na ho to ye agr ho to ye for animation  */}
+        <div className={isOpen?"menu-items active" : "menu-items"}>
             <ul>
                 <li>Sectors</li>
                 <li>How It Works</li>
@@ -43,7 +44,7 @@ const Navbar = () => {
                 <li>Contact</li>
             </ul>
         </div>
-        )}
+        {/* )} */}
       </div>
     </nav>
   );
