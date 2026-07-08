@@ -1,0 +1,91 @@
+.sectors{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 100px 20px;
+}
+
+.sectors-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18% 64% 18% !important;
+}
+
+.sector-img{
+    width:100% !important ;
+}
+
+.sector-wall-text{
+    width: 75% !important;
+    font-size: 180px;
+    line-height: 0.9 !important;
+    font-weight: 700;
+    background-image: url("../../assets/Images/sector-sec-img1.jpg");
+    background-size: cover !important;
+    position:relative  !important;
+    background-position: center !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: inline-block;
+}
+
+.sector-art-text{
+    width: 75% !important;
+    font-size: 160px;
+    line-height: 0.9 !important;
+    font-weight: 700;
+    background-image: url("../../assets/Images/Sector-sec-img2.jpg");
+    background-size: cover !important;
+    position:relative  !important;
+    background-position: center !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    display: inline-block;
+}
+
+.sector-asia-text{
+    font-style: italic !important;
+    font-size: 100px !important;
+    font-weight: 500 !important;
+}
+
+.sector-content{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.list ul{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.list ul li {
+    gap: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    list-style: circle;
+}
+
+.list ul li::marker {
+    color: var(--secondary);
+    font-size: 20px;
+}

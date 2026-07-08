@@ -35,11 +35,15 @@
     gap: 22px;
 }
 
+.btn{
+    padding: 9px 34px;
+}
+
 .btn-black{
     font-family: "Inter", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    padding: 8px 32px;
+    padding: 9px 34px;
     color: var(--white);
     background-color: var(--black);
     transition: all .3s ease;
