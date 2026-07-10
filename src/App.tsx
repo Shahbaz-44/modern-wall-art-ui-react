@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero'
 import './App.css'
 import Sectors from './Components/Sectors/Sectors'
 import Work from './Components/Work/Work'
+import Gallery from './Components/Gallery/Gallery'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <Hero />
     <Sectors />
     <Work />
+    <Gallery />
     </>
   )
 }

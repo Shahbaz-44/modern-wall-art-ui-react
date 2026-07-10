@@ -10,7 +10,7 @@ function Work() {
           <h5>HOW IT WORKS</h5>
           <h2>Breathe Life Into Any Space</h2>
         </div>
-
+        
         <div className="card-container">
           {cards.map((card) => (
             <div
