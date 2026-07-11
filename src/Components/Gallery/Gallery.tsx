@@ -1,16 +1,22 @@
 import {cards} from './galleryData'
-import { FaPlayCircle } from "react-icons/fa";
+import { IoPlayCircleOutline } from "react-icons/io5";
 import { RiCloseLine } from "react-icons/ri";
 import { useState } from 'react';
+import './Gallery.css'
 
 const Gallery = () => {
     const [open, setOpen] = useState(false);
-    // cosnt [selectedVideo, setSelectedVideo] = useState("");
+    const [selectedVideo, setSelectedVideo] = useState("");
 
-    // cosnt handlePlay = (videourl) => {
-    //   setSelecetedVideo(videourl);
-    //   setOpen(true);
-    // };
+    const handlePlay = (video:string) => {
+      setSelectedVideo(video);
+      setOpen(true);
+    };
+
+    const handleClose = () => {
+      setSelectedVideo("");
+      setOpen(false);
+    };
 
   return (
     <section className='gallery'>
@@ -21,7 +27,8 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-container">
-                {cards.map((card)=>(
+              <div className="first-left">
+                {cards.slice(0, 2).map((card)=>(
                   <div 
                     className="card"
                     key={card.id}
@@ -29,15 +36,61 @@ const Gallery = () => {
                     >
                     <div className="overlay">
 
-                      <FaPlayCircle className='play-icon' />
-                      <RiCloseLine className='close-icon' />
-                      <iframe src={card.video}></iframe>
+                      <IoPlayCircleOutline
 
-                      <h3>{card.title}</h3>
+                      className='play-icon'
+                      onClick={() => handlePlay(card.video)}  
+                      role='button'
+                      tabIndex={0}
+                      />
+
+                      <h5 className='titlee'>{card.title}</h5>
                     </div>
                   </div>
                 ))}
-            </div>
+              </div>
+              <div className="first-right">
+                {cards.slice(2, 4).map((card)=>(
+                  <div 
+                    className="card double-card"
+                    key={card.id}
+                    style={{backgroundImage: `url(${card.image})`}}
+                    >
+                    <div className="overlay">
+
+                      <IoPlayCircleOutline
+                      className='play-icon'
+                      onClick={() => handlePlay(card.video)}  
+                      role='button'
+                      tabIndex={0}
+                      />
+
+                      <h5 className='titlee'>{card.title}</h5>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div> { open && (
+              <div className="video-popup"
+              onClick={handleClose}
+              >
+                <div className="video-content"
+                onClick={(e)=>e.stopPropagation()}
+                >
+                  <RiCloseLine
+                  onClick={handleClose}
+                  className='close-icon'
+                  />
+
+                <iframe
+                    src={selectedVideo}
+                    allowFullScreen
+                    allow="autoplay; encrypted-media"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                />
+                </div>
+              </div>
+            )}
 
         </div>
     </section>
