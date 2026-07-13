@@ -4,6 +4,7 @@ import './App.css'
 import Sectors from './Components/Sectors/Sectors'
 import Work from './Components/Work/Work'
 import Gallery from './Components/Gallery/Gallery'
+import Business from './Components/Business/Business'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Sectors />
     <Work />
     <Gallery />
+    <Business />
     </>
   )
 }

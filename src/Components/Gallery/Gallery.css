@@ -13,12 +13,13 @@
 .gallery-container{
     width: 100% !important;
     display:grid;
+    gap: 25px;
     /* grid-template-columns: repeat(2, 1fr) !important; */
-    grid-template-columns: 70% 30%;
+    /* grid-template-columns: 70% 30%; */
     /* gap:25px !important; */
 }
 
-.first-left{
+/* .first-left{
     display:grid;
     grid-template-columns: repeat(3, 1fr) !important;
     gap:25px;
@@ -28,29 +29,64 @@
     display:grid;
     grid-template-rows: repeat(2, 1fr) !important;
     gap:25px;
+} */
+
+.row1,
+.row2{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px; 
 }
 
-.card{
-    height: 580px;
-    width:400px;
-}  
-.double-card{
+.first-left,
+.second-right{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+.first-right,
+.second-left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* .card:nth-child(3),
+.card:nth-child(4){
+    grid-row:span 2;
     height: 280px;
     width:350px;
+} */
+
+ /* .double-card{
+    height: 280px;
+    width:350px;
+}   */
+
+
+.card{
+    height: 600px;
+    width:390px;
+    position: relative;
+    overflow: hidden;
 }  
+
 
 .overlay{
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
+    flex-direction: column;
 }
 
 .play-icon{
-    font-size: 65px !important;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px !important;
     color: rgb(255, 255, 255);
     background-color: #000;
     border: 12px solid black;
-    border-radius: 50%;
+    border-radius: 80%;
     text-align: center !important;
 }
 .play-icon :hover{
@@ -59,6 +95,8 @@
 }
 
 .titlee{
+    align-self:center;
+    justify-content: center;
     color: white;
     background-color: #1A1A1D;
     padding: 12px 30px;

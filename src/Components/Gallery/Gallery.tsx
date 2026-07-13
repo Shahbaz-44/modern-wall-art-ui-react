@@ -27,48 +27,95 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-container">
-              <div className="first-left">
-                {cards.slice(0, 2).map((card)=>(
-                  <div 
-                    className="card"
-                    key={card.id}
-                    style={{backgroundImage: `url(${card.image})`}}
-                    >
-                    <div className="overlay">
-
-                      <IoPlayCircleOutline
-
-                      className='play-icon'
-                      onClick={() => handlePlay(card.video)}  
-                      role='button'
-                      tabIndex={0}
-                      />
-
-                      <h5 className='titlee'>{card.title}</h5>
-                    </div>
-                  </div>
-                ))}
+              <div className="row1">
+                 <div className="first-left">  
+                   {cards.slice(0, 2).map((card)=>(
+                     <div 
+                       className="card"
+                       key={card.id}
+                       style={{backgroundImage: `url(${card.image})`}}
+                       >
+                       <div className="overlay">
+   
+                         <IoPlayCircleOutline
+   
+                         className='play-icon'
+                         onClick={() => handlePlay(card.video)}  
+                         role='button'
+                         tabIndex={0}
+                         />
+   
+                         <h5 className='titlee'>{card.title}</h5>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
+                 <div className="first-right">
+                   {cards.slice(2, 4).map((card)=>(
+                     <div 
+                       className="card double-card"
+                       key={card.id}
+                       style={{backgroundImage: `url(${card.image})`}}
+                       >
+                       <div className="overlay">
+   
+                         <IoPlayCircleOutline
+                         className='play-icon'
+                         onClick={() => handlePlay(card.video)}  
+                         role='button'
+                         tabIndex={0}
+                         />
+   
+                         <h5 className='titlee'>{card.title}</h5>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
               </div>
-              <div className="first-right">
-                {cards.slice(2, 4).map((card)=>(
-                  <div 
-                    className="card double-card"
-                    key={card.id}
-                    style={{backgroundImage: `url(${card.image})`}}
-                    >
-                    <div className="overlay">
-
-                      <IoPlayCircleOutline
-                      className='play-icon'
-                      onClick={() => handlePlay(card.video)}  
-                      role='button'
-                      tabIndex={0}
-                      />
-
-                      <h5 className='titlee'>{card.title}</h5>
-                    </div>
-                  </div>
-                ))}
+              <div className="row2">
+                 <div className="second-left">  
+                   {cards.slice(4, 6).map((card)=>(
+                     <div 
+                       className="card"
+                       key={card.id}
+                       style={{backgroundImage: `url(${card.image})`}}
+                       >
+                       <div className="overlay">
+   
+                         <IoPlayCircleOutline
+   
+                         className='play-icon'
+                         onClick={() => handlePlay(card.video)}  
+                         role='button'
+                         tabIndex={0}
+                         />
+   
+                         <h5 className='titlee'>{card.title}</h5>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
+                 <div className="second-right">
+                   {cards.slice(6, 8).map((card)=>(
+                     <div 
+                       className="card double-card"
+                       key={card.id}
+                       style={{backgroundImage: `url(${card.image})`}}
+                       >
+                       <div className="overlay">
+   
+                         <IoPlayCircleOutline
+                         className='play-icon'
+                         onClick={() => handlePlay(card.video)}  
+                         role='button'
+                         tabIndex={0}
+                         />
+   
+                         <h5 className='titlee'>{card.title}</h5>
+                       </div>
+                     </div>
+                   ))}
+                 </div>
               </div>
             </div> { open && (
               <div className="video-popup"
