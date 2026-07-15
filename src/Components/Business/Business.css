@@ -1,0 +1,81 @@
+.business{
+    margin: 50px 20px 20px 20px;
+}
+
+.business-container{
+    width: 100% !important;
+
+}
+
+.business-row1{
+    margin: 50px 0px;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    gap: 25px;
+}
+
+.business-row2{
+    margin: 50px 0px;
+    display:flex;
+    gap:25px;
+    justify-content: center !important;
+    text-align: center;
+}
+
+.business-content{
+    padding-right:10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;border-right: 1px solid white;
+}
+
+.handshake-icon{
+    font-size: 50px;
+    background-color: var(--accent);
+    border: solid var(--accent);
+    border-radius: 30px;
+    border-width: 8px;
+}
+
+.bsns-cntnt-ul{
+    list-style: disc;
+    padding: 0px 20px;
+    color: var(--text);
+}
+
+.we-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-card{
+    margin: 10px;
+    padding: 20px 8px;
+    background-color: #1A1A1D;
+    border: 1px solid white;
+    text-align: center;
+    justify-items: center;
+}
+
+.feature-img{
+    width: 50px;
+    display: block;
+}
+.feature-heading:hover{
+    color: var(--accent);
+}
+
+.business-btn{
+    display: flex;
+    justify-self: center;
+}
+.business-btn:hover{
+    background-color: white;
+    color: black;
+}

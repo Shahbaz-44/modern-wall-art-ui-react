@@ -1,6 +1,7 @@
 import card1 from '../../assets/Images/work-card1.jpg'
 import card2 from '../../assets/Images/work-caed2.png'
 import card3 from '../../assets/Images/work-card3.jpg'
+
  
  export const cards = [
     {
