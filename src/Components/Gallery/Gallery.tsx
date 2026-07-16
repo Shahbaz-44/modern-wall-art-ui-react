@@ -19,7 +19,7 @@ const Gallery = () => {
     };
 
   return (
-    <section className='gallery'>
+    <section className='gallery' id='gallery'>
         <div className="container">
 
             <div className="gallery-heading">

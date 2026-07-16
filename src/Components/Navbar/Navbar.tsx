@@ -36,12 +36,24 @@ const Navbar = () => {
             {/* class conditoion open na ho to ye agr ho to ye for animation  */}
         <div className={isOpen?"menu-items active" : "menu-items"}>
             <ul>
-                <li>Sectors</li>
-                <li>How It Works</li>
-                <li>Gallery</li>
-                <li>Start Your Own Business</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li>
+                 <a href="#sectors">Sectors</a>
+                </li>
+                <li> 
+                  <a href="#work">How It Works</a>
+                </li>
+                <li>
+                  <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                  <a href="#business">Start Your Own Business</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  Contact
+                </li>
             </ul>
         </div>
         {/* )} */}

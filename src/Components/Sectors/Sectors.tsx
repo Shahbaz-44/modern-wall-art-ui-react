@@ -5,7 +5,7 @@ import './Sectors.css'
 
 const Sectors = () => {
   return (
-    <section className="sectors">
+    <section className="sectors" id='sectors'>
         <div className="container">
             <div className="sectors-grid">
 

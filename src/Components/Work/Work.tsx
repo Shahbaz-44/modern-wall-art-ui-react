@@ -3,7 +3,7 @@ import { cards } from "./workData";
 
 function Work() {
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="container">
 
         <div className="work-heading">

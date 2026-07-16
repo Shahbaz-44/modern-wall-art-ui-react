@@ -6,7 +6,7 @@ import { features } from './businessData';
 
 const Business = () => {
   return (
-    <section className="business">
+    <section className="business" id='business'>
         <div className="container">
             <div className="business-container">
 
