@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
    // false = menu band
-  // true = menu open
+  // true = menu open 
     const [isOpen, setIsOpen ] = useState(false);
 
   return (
